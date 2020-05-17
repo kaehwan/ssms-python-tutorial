@@ -30,7 +30,7 @@ https://www.datacamp.com/community/blog/python-numpy-cheat-sheet
 
 import numpy as np
 
-x = [1,5,-2,8,6]
+x = [1, 5, -2, 8, 6]
 
 print('value of x =', x)
 
@@ -69,8 +69,8 @@ len(object) --> get the length of object
  pd.DataFrame.mean() --> get the mean of the pandas DataFrame
 """
 
-# x = [0,1,2,3,4]
-# y = 'this is a string'
+# x = [0, 1, 2, 3, 4]
+# y = "this is a string"
 #
 # print('length of x =', len(x))
 # print('length of y =', len(y))
@@ -106,9 +106,6 @@ stored correctly.
 4. print out your answers.
 
 """
-
-
-
 
 """
 Custom Function
@@ -146,3 +143,14 @@ EXERCISE 2 - Custom Functions
 2. apply this function to (45, 60)
 """
 
+
+def add_and_square(num1, num2):
+    try:
+        import numpy as np
+        total = float(num1) + float(num2)
+        return total ** 2
+    except:
+        print("Please enter numbers only.")
+
+
+print(add_and_square(45, 60))
